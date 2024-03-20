@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*----------- only for animation ----------- */
+/* navbar section */
+.nav_item{
+    position: relative;
+   
+}
+.nav_item:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.nav_item::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 2%;
+    height: 2px;
+    background: transparent;
+}
+.nav_item::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 2%;
+    height: 2px;
+    background: transparent;
+}
+.nav_item:hover::after{
+    width: 80%;
+    background: black;
+    transition: 0.4s;
+}
+
+.nav_item:hover::before{
+    width: 80%;
+    background: black;
+    transition: 0.3s;
+}
+
+/* hero section */
+.hero_btn {
+    position: relative;
+    overflow: hidden;
+}
+.hero_btn::after {
+    position: absolute;
+    content: '';
+    top: 10%;
+    left: 10%;
+    height: 5px ;
+    width: 5px;
+    background: white;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0;
+
+}
+.hero_btn::before {
+    position: absolute;
+    content: '';
+    top: 10%;
+    left: 10%;
+    height: 20px ;
+    width: 20px;
+    background: #c14061;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0;
+    animation: hero_btnAnim;
+    animation-duration: 1s;
+}
+.hero_btn:hover::after{
+    transform: scale(4);
+    transition: 0.6s;
+    opacity: 0.4;
+    top: 100%;
+    left: 80%;
+}
+.hero_btn:hover::before{
+    transform: scale(4);
+    transition: 0.7s;
+    opacity: 1;
+    top: 100%;
+    left: 80%;
+}
+.hero_items,.suheading_items{
+    position: relative;
+}
+.hero_items::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 1px;
+    width: 20%;
+    background: #ffff;
+    animation: items;
+    animation-duration: 0.4s;
+}
+.suheading_items::after{
+    position: absolute;
+    content: '';
+    bottom: 0;  
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #676767;
+    animation: subitems;
+    animation-duration: 0.4s;
+}
+@keyframes items {
+    from{
+        width: 2%;
+    }
+    to{
+        width: 20%;
+    }
+}
+@keyframes subitems {
+    from{
+        width: 2%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+/* skills */
+.skills__contents{
+    box-shadow: 0px 0px 2px 0px rgba(103, 103, 103, 0.219);
+    transition: 0.4s;
+}
+
+.skills__contents:hover{
+    box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.219);
+}
+
+
+/* media query */
+@media (min-width: 767px) and (max-width: 1040px) {
+    .hero__button{
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+.project__button{
+    position: relative;
+    overflow: hidden;
+}
+.project__button::after{
+    position: absolute;
+    content: '';
+    bottom: -119%;
+    left: -15%;
+    width: 10px;
+    height: 440%;
+    background: rgba(255, 255, 255, 0.518);
+    transform: rotate(45deg);
+}
+.project__button::before{
+    position: absolute;
+    content: '';
+    bottom: -119%;
+    left: -5%;
+    width: 5px;
+    height: 440%;
+    background: rgba(255, 255, 255, 0.685);
+    transform: rotate(45deg);
+
+}
+.project__button:hover::before{
+    left: 120%;
+    transition: 0.8s;
+}
+.project__button:hover::after{
+    left: 130%;
+    transition: 1s;
+}
+.project__button:hover{
+    transition: 0.3s;
+    color: #c14061;
+    font-weight: 600;
+}
+.project_button{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    outline: none;
+}
+.project_button:hover{
+    /* background: #c14061; */
+    color: white;
+}
+.project_button::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #c14061;
+    bottom: 0;
+    right: -120%;
+    z-index: -1;
+    transform: rotate(120deg);
+    border-radius: 4px;
+}
+.project_button:hover::after{
+    transform: rotate(-0deg);
+    transition: 0.4s;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+.active{
+    background: #c14061;
+    color: #fff;
+}
+.project__overlay{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 100%;
+    right: 150%;
+    background: rgba(22, 10, 10, 0.4);
+    transform: rotate(-80deg);
+    opacity: 0;
+}
+.project__items:hover .project__overlay{
+    transform: rotate(0deg);
+    opacity: 1;
+    width: 100%;
+    transition: 0.7s ease;
+    top: 0;
+    right: 0;
+}
+.project__More{
+    box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 0.116);
+    background: rgba(0, 0, 0, 0.092);
+}
+.transition_more {
+    animation: transition_Ani ;
+    animation-duration: 1s ;
+    animation-timing-function: ease;
+}
+@keyframes transition_Ani {
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
