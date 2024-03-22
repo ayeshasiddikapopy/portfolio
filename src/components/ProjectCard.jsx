@@ -5,7 +5,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import Images from './Images';
 import Button from './Button';
 
-const ProjectCard = ({src, onclickcode, onclickView}) => {
+const ProjectCard = ({src, onclickcode, onclickView , onClickDetails}) => {
     let [angle, setAngle] = useState(false)
     let [angle2, setAngle2] = useState(false)
     let btnRef = useRef()
@@ -28,6 +28,7 @@ const ProjectCard = ({src, onclickcode, onclickView}) => {
         btn2Ref.current.style.transition = '0.4s'
     }
 
+
   return (
     <>
     <div className="project__items w-[100%] md:w-[25%] sm:w-[50%] p-5 rounded-sm overflow-hidden">
@@ -48,7 +49,7 @@ const ProjectCard = ({src, onclickcode, onclickView}) => {
                 </div>
             </div>
         </div>
-        <div className='text-white bg-black text-center font-normal capitalize rounded-b-md project__button'>
+        <div className='text-white bg-black text-center font-normal capitalize rounded-b-md project__button' onClick={onClickDetails}>
             <Button title='Details'/>
         </div>
     </div>

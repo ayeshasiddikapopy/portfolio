@@ -290,3 +290,8 @@
     animation: project_closeAnim 1s ease forwards;
 }
 /* project see more effect--->> */
+.gg{
+    border-width: 1px;
+    border-bottom: #676767;
+    border-style: solid;
+}
