@@ -90,8 +90,8 @@ const Project = ({ history }) => {
         <Container>
             <SubHeading title='Projects' className='text-center sm:py-3 py-3 '/>
             <div className={more ? "project__contents sm:flex sm:flex-wrap" : "project__contents sm:flex sm:flex-wrap delay_animi"}>
-                <ProjectCard src = 'src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
-                <ProjectCard src = 'src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
+                <ProjectCard src = './assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
+                <ProjectCard src = './src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
                 <ProjectCard src = 'src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>
                 <ProjectCard src = 'src/assets/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
             </div>
