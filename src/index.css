@@ -245,22 +245,48 @@
     box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 0.116);
     background: rgba(0, 0, 0, 0.092);
 }
-.transition_more {
-    animation: transition_Ani ;
-    animation-duration: 1s ;
-    animation-timing-function: ease;
+
+/* ----project displayed open--- */
+.delay_animi{
+    animation: delay_animis 0.4s ease forwards;
+   
 }
-@keyframes transition_Ani {
-    0%{
-        opacity: 0;
+@keyframes delay_animis {
+    from {
         transform: translateY(0px);
     }
-    50%{
-        opacity: 0.5;
-        transform: translateY(5px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(10px);
+    to {
+        transform: translateY(20px);
+ 
     }
 }
+/* ----project displayed open--- */
+/* project see more effect--->> */
+@keyframes project_showAnim {
+    from {
+        transform: translateY(100%);    
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes project_closeAnim {
+    from {
+        transform: translateY(0);
+        display: none;
+    }
+    to {
+        transform: translateY(200%);
+        display: none;
+    }
+}
+
+.project_show {
+    animation: project_showAnim 1s ease forwards;
+}
+
+.project_close {
+    animation: project_closeAnim 1s ease forwards;
+}
+/* project see more effect--->> */

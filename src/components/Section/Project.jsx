@@ -45,41 +45,38 @@ const Project = ({ history }) => {
     // see more
     let handleMore = () => {
         setMore(!more)
-        // moreRef.current.style.color  = 'red'
     }
    
   return (
     <>
-    <div className='p-2.5'>
+    <div className='p-2.5 overflow-hidden'>
         <Container>
             <SubHeading title='Projects' className='text-center sm:py-12 pb-7 '/>
-            <div className="project__contents sm:flex sm:flex-wrap">
+            <div className={more ? "project__contents sm:flex sm:flex-wrap" : "project__contents sm:flex sm:flex-wrap delay_animi"}>
                 <ProjectCard src = 'src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne}/>
                 <ProjectCard src = 'src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo}/>
                 <ProjectCard src = 'src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree}/>
                 <ProjectCard src = 'src/assets/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour}/>
             </div>
            
-            {
-                more &&
-                <div className="project__contents sm:flex sm:flex-wrap transition_more ">
-                    <ProjectCard src = 'src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne}/>
-                    <ProjectCard src = 'src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo}/>
-                    <ProjectCard src = 'src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree}/>
-                    <ProjectCard src = 'src/assets/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour}/>
-                </div>
-            }
-
-             <div className='flex justify-center py-2 project__More my-2 cursor-pointer' onClick={handleMore} ref={moreRef}>
+            <div className={more ? 'project__contents sm:flex sm:flex-wrap project_show project_showAnim' : 'project__contents sm:flex sm:flex-wrap project_closeAnim project_close'}>
+                <ProjectCard src = 'src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne}/>
+                <ProjectCard src = 'src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo}/>
+                <ProjectCard src = 'src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree}/>
+                <ProjectCard src = 'src/assets/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour}/>
+            </div>
+            
+             <div className='flex justify-center py-2 project__More my-2 cursor-pointer' onClick={handleMore}>
                 {
-                    more 
+                    !more 
                     ?
-                    <p className='text-base text-black underline font-philospher font-bold hover:text-[#c14061] transition ease-in-out delay-150 '>see less</p>
+                    <p className='text-base text-black underline font-philospher font-bold hover:text-[#c14061] '>see more</p>
                     :
-                    <p className='text-base text-black underline font-philospher font-bold hover:text-[#c14061] transition ease-in-out delay-150 '>see more</p>
+                    <p className='text-base text-black underline font-philospher font-bold hover:text-[#c14061] '>see less</p>
                 }
             </div>
         </Container>
+
     </div>
     </>
   )

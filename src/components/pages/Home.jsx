@@ -13,6 +13,8 @@ const Home = () => {
       <About/>
       <Skills/>
       <Project/>
+
+      
     </>
   )
 }
