@@ -84,7 +84,7 @@ const Navbar = () => {
                     <IoIosClose className= {' nav_show text-[40px] bg-secondary rounded-md ' } onClick={handllclose}/>
                   </div>
                   <List className= 'flex gap-[4rem] flex-col items-center content-center w-[100%] bg-[#fff] h-[100%]'>
-                    <ListItem title='home' className=' nav_resize_item' to='/'/>
+                    <ListItem title='home' className=' nav_resize_item '/>
                     <ListItem title='About' className='nav_resize_item'/>
                     <ListItem title='services' className=' nav_resize_item'/>
                     <ListItem title='contact' className=' nav_resize_item'/>
