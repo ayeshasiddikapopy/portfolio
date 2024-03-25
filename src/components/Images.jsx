@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Images = ({className,src}) => {
+const Images = ({className,src,children}) => {
   return (
     <>
     <div className={className}>
-        <img src={src} alt="photo" className='w-full h-full'/>
+        {children}
+        <img src={src} alt="photo" className='w-full h-full rounded'/>
     </div>
     </>
   )

@@ -1,41 +1,134 @@
 import React, { useRef, useState } from 'react'
+import ProjectCard from './ProjectCard';
 
 
 const Some = () => {
-  let [details, setdetails] = useState(false)
-      //details
-      let handleDetails = () => {
-        setdetails(true)
-        console.log('dd')
-    }
-    let handleClose = () => {
-        setdetails(false)
-    }
-    let handleCloseALl = () => {
-        setdetails(false)
-    }
+  // const [details, setDetails] = useState(false);
+
+  // const handleDetails = () => {
+  //   setDetails(!details);
+  // };
+
+  // return (
+  //   <>
+  //     <div className='bg-red-500 py-4' onClick={handleDetails}>
+  //       <p>Toggle Details</p>
+  //     </div>
+
+  //     <div className={`fg ${details ? 'show' : ''}`}>
+  //       {/* Content to be displayed when details is true */}
+  //       Details Content
+  //     </div>
+  //   </>
+  // );
+  // const [details, setDetails] = useState(false);
+  // const contentRef = useRef(null);
+
+  // const handleDetails = () => {
+
+  //   const contentElement = contentRef.current;
+
+  //   if (!details) {
+
+  //     contentElement.style.display = 'flex'; 
+  //     const contentHeight = contentElement.scrollHeight;
+  //     contentElement.style.overflow = 'hidden'; 
+
+  //     contentElement.animate(
+  //       { height: [0, contentHeight + 'px'] },
+  //       {
+  //         duration: 500, 
+  //         easing: 'ease', 
+  //         fill: 'forwards' 
+  //       }
+  //     );
+  //   } else {
+   
+  //     contentElement.animate(
+  //       { height: [contentElement.scrollHeight + 'px', 0] },
+  //       {
+  //         duration: 500,
+  //         easing: 'ease',
+  //         fill: 'forwards'
+  //       }
+  //     ).onfinish = () => {
+  //       contentElement.style.display = 'none';  
+  //       contentElement.style.height = ''; 
+  //       contentElement.style.overflow = ''; 
+  //     };
+  //   }
+
+  //   setDetails(!details);
+  // };
+
+  // return (
+  //   <>
+  //     <div className='bg-red-500 py-4' onClick={handleDetails}>
+  //       <p>Toggle Details</p>
+  //     </div>
+
+  //     <div className='fg flex' ref={contentRef} style={{ display: 'none', overflow: 'hidden' }}>
+  //       <ProjectCard src = 'src/assets/p1.png' />
+  //       <ProjectCard src = 'src/assets/p1.png' />
+  //       <ProjectCard src = 'src/assets/p1.png' />
+  //       <ProjectCard src = 'src/assets/p1.png' />
+  //     </div>
+  //   </>
+  // );
+
+  // let [btn, setbtn] = useState(false)
+  // let handleclcik = () => {
     
-  return (
+  //   setbtn(!btn)
+  //   setTimeout(() => {
+
+  //   }, 1000);
+  // }
+
+  // let tgle = btn ? 'active' : ''
+  // let tgle2 = btn ? 'actives' : ''
+
+  return(
     <>
-
-    <div className='bg-red-500 py-4' onClick={handleDetails}>
-      <p>details</p>
-    </div>
-
-{
-        details &&
-        
-        <div className=''>
-          <div className='w-full h-full bg-[#0000007b] fixed top-0 left-0'  onClick={handleCloseALl}></div>
-            <div className='w-[40%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-[#fff] p-2.5 rounded-md'>
-                <h2 className='text-base font-philospher text-black font-bold gg py-1 my-1'>Project : <span className=''>chat me</span></h2>
-                <p className='text-[12px] text-[#676767] font-sans font-normal py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odit eius impedit et rem provident maxime dignissimos vitae delectus. Necessitatibus veniam dignissimos cum cupiditate rerum. Excepturi commodi atque dolore minima.</p>
-                <p className='text-base text-black font-philospher font-semibold '>Technologies : <span className='text-[12px] font-normal font-sans'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, veritatis.</span></p>
-                <p className='text-center inline mx-auto' onClick={handleClose}>close</p>
-            </div>
-        </div>
-    }
     </>
+    // <>
+    //   <button type='button' className= {`btn ${tgle}`} onClick={handleclcik}>toogle</button>
+      
+    //     <p className={ !btn ? 'bg ': 'bg actives'}>dfdfdff</p>
+    //   <p>cdcdcd</p>
+    // </>
+    // fg{
+  //   display: flex;
+  // }
+  // .active{
+  //     background: #000;
+  //     transition: 1s ease;
+  // }
+  // .btn{
+  //     transition: 1s ease;
+  
+  // }
+  // .bg{
+  //     padding: 40px 0;
+  //     transition: 2s ease;
+  //     width: 0px;
+  //     background: red;
+  //     position: absolute;
+  //     left: -100%;
+  //     opacity: 0;
+  //     top: 30%;
+     
+  
+  // }
+  // .actives{
+  //     background: red;
+  //     transition: 2s;
+  //     width: 200px;
+  //     left: 0;
+  //     opacity: 1;
+      
+  // } */
+  
   )
 }
 

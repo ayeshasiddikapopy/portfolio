@@ -145,13 +145,7 @@
 }
 
 
-/* media query */
-@media (min-width: 767px) and (max-width: 1040px) {
-    .hero__button{
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    }
-}
-
+/* project started */
 .project__button{
     position: relative;
     overflow: hidden;
@@ -232,19 +226,21 @@
     background: rgba(22, 10, 10, 0.4);
     transform: rotate(-80deg);
     opacity: 0;
+    transition: 0.7s ease;
 }
 .project__items:hover .project__overlay{
     transform: rotate(0deg);
     opacity: 1;
     width: 100%;
-    transition: 0.7s ease;
     top: 0;
     right: 0;
+    transition: 0.7s ease;
 }
 .project__More{
     box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 0.116);
     background: rgba(0, 0, 0, 0.092);
 }
+
 
 /* ----project displayed open--- */
 .delay_animi{
@@ -290,8 +286,74 @@
     animation: project_closeAnim 1s ease forwards;
 }
 /* project see more effect--->> */
+/* project ended */
 .gg{
     border-width: 1px;
     border-bottom: #676767;
     border-style: solid;
+}
+.team_heading{
+    position: relative;
+}
+.team_heading::after{
+    position: absolute;
+    content: '';
+    bottom: 5%;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    background: #676767;
+}
+
+.overlay{
+    position: absolute;
+    content: '';
+    top: -70%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #0000004b;
+    transition: all 1s ease ;
+
+    
+}
+.overlay2{
+    position: absolute;
+    content: '';
+    bottom: -70%;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #0000004b;
+    transition: all 1s ease ;
+}
+.team__Img{
+    transition: all 1s ease ;
+}
+.team__Img:hover .overlay{
+    top: 0;
+    transition: all 1s ease ;
+    height: 50%;
+}
+.team__Img:hover .overlay2{
+    bottom: 0;
+    transition: 1s;
+}
+
+
+/* media query */
+@media (min-width: 600px) and (max-width: 770px) {
+    
+    .team_heading{
+        font-size: 4rem !important;
+    }
+
+}
+
+
+@media (min-width: 767px) and (max-width: 1040px) {
+    .hero__button{
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
 }

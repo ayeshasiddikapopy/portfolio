@@ -15,7 +15,7 @@ const Contact = () => {
                             <input type="email" className='outline-none p-2 m-2 sm:w-[50%] w-full my-3  border-b-2' placeholder='Enter your Email'/>
                         </div>
                         <div>
-                            <textarea placeholder='Tell us more to know' className='w-[50%] h-[200px] outline-none border-b overflow-auto px-2 py-4'></textarea>
+                            <textarea placeholder='More to know' className='w-[50%] h-[200px] outline-none border-b overflow-auto px-2 py-4'></textarea>
                         </div>
                     </form>
                     <div className='text-center pt-[2rem] sm:pt-[4rem]'>
