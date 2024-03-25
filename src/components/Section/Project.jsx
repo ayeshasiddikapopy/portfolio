@@ -89,7 +89,7 @@ const Project = ({ history }) => {
     <div className='p-2.5 overflow-hidden bg-secondary'>
         <Container>
             <SubHeading title='Projects' className='text-center sm:py-3 py-3 '/>
-            <div className={more ? "project__contents sm:flex sm:flex-wrap" : "project__contents sm:flex sm:flex-wrap delay_animi"}>
+            <div className={more ? "project__contents flex flex-wrap justify-center" : "project__contents flex flex-wrap justify-center delay_animi"}>
                 <ProjectCard src = '../src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
                 <ProjectCard src = '../src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
                 <ProjectCard src = '../src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>

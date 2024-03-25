@@ -5,6 +5,7 @@ import Skills from '../Section/Skills';
 import Project from '../Section/Project';
 import Contact from '../Section/Contact';
 import Team from '../Section/Team';
+import Services from '../Section/Services';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
       <About/>
       <Skills/>
       <Project/>
+      <Services/>
       <Team/>
       <Contact/>      
     </>

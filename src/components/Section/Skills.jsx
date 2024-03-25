@@ -11,6 +11,8 @@ import { FaBootstrap } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { TbBrandFirebase } from "react-icons/tb";
+import { SiJquery } from "react-icons/si";
+
 import Card from '../Card';
 
 const Skills = () => {
@@ -19,7 +21,7 @@ const Skills = () => {
     <div className='p-2.5'>
         <Container>
             <SubHeading title='Skills' className='text-center sm:py-12 pb-7 '/>
-            <div className='flex flex-wrap gap-x-5 sm:justify-center gap-y-2'>
+            <div className='flex flex-wrap gap-x-5 justify-center gap-[2rem]'>
                 <Card title= 'html' item='Hypertext markup Language '>
                     <TiHtml5 className='text-[20px] text-[#FC6736] inline-block' />
                 </Card>
@@ -37,6 +39,9 @@ const Skills = () => {
                 </Card>
                 <Card title= 'tailwind' item='modern css framework , works with various css, flex, grid , customize css using tailwind '>
                     <BiLogoTailwindCss className='text-[20px] text-[#50C4ED] inline-block' />
+                </Card>
+                <Card title= 'jquery' item='works with jquery  to better designs, animations'>
+                    <SiJquery className='text-[20px] text-[#50C4ED] inline-block' />
                 </Card>
                 <Card title= 'bootstrap' item='works with bootstrap , flex, grid, responsive deisign'>
                 <FaBootstrap className='text-[20px] text-[#50C4ED] inline-block' />

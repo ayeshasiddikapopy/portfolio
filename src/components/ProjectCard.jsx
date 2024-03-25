@@ -31,9 +31,9 @@ const ProjectCard = ({src, onclickcode, onclickView , onClickDetails}) => {
 
   return (
     <>
-    <div className="project__items w-[100%] md:w-[25%] sm:w-[50%] p-5 rounded-sm overflow-hidden">
+    <div className="project__items w-[80%] md:w-[25%] sm:w-[50%] p-5 rounded-sm overflow-hidden">
         <div className='project_img relative overflow-hidden'>
-            <Images src={src} className='w-full h-[250px] bg-black rouded-sm'/>
+            <Images src={src} className='w-full h-[250px] rouded-sm'/>
             <div className='project__overlay'>
                 <div className='flex justify-center gap-3 absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]'>
                     <button type='button' className='text-black bg-white sm:px-3 sm:py-1 font-sans text-sm font-semibold rounded-md flex items-center gap-1 project_button active' onMouseMove={handlemove} onMouseLeave={handleleave} ref={btnRef} onClick={onclickcode}>code

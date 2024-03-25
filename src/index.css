@@ -351,7 +351,18 @@
     animation: project_closeAnim 1s ease forwards;
 }
 /* project see more effect--->> */
-/* project ended */
+/*--------- project ended---------- */
+/* ---------- services started------ */
+.service_item:hover h2, .service_item:hover p{
+    font-weight: bold;
+    transition: .1s;
+}
+.service_item:hover{
+    box-shadow: -1px 3px 10px #00000054;
+    transform: scale(1);
+}
+/* ---------- services ended------ */
+
 .gg{
     border-width: 1px;
     border-bottom: #676767;
