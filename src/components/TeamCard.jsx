@@ -7,7 +7,7 @@ import { TbWorld } from "react-icons/tb";
 const TeamCard = ({onfacebook, onLinkedin, onlink, teamimg,title,designation}) => {
   return (
     <>
-    <Images src={teamimg} className='w-[100%] h-[18.75rem] p-2.5 relative team__Img overflow-hidden'>
+    <Images src={teamimg} className='w-[100%] h-[18.75rem] p-2.5 relative team__Img overflow-hidden '>
         <div className='overlay '>
             <h2 className='text-secondary font-philospher font-semibold capitalize bg-[#000000ca] rounded sm:text-[1.2rem] absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10'>{title}</h2>
         </div>

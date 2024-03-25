@@ -87,9 +87,36 @@ const Some = () => {
 
   // let tgle = btn ? 'active' : ''
   // let tgle2 = btn ? 'actives' : ''
+  const bRef = useRef(null);
 
+  const handleClick = () => {
+    bRef.current.classList.add('new');
+    // bRef.current.classList.remove('nav_show');
+    console.log('dfdf')
+  };
+  const handleClick2 = () => {
+    bRef.current.classList.remove('new');
+    // bRef.current.classList.remove('nav_show');
+    console.log('dfdf')
+  };
+  const handleClick3 = () => {
+    bRef.current.classList.remove('new');
+    // bRef.current.classList.remove('nav_show');
+    console.log('dfdf')
+  };
   return(
     <>
+    <div>
+      <button onClick={handleClick}>Add Class</button>
+      <br />
+      <button onClick={handleClick2}>rw Class</button>
+      <br />
+      <br />
+  
+      <div ref={bRef} className="box ">
+      <button onClick={handleClick3}>anotht Class</button>
+      </div>
+    </div>
     </>
     // <>
     //   <button type='button' className= {`btn ${tgle}`} onClick={handleclcik}>toogle</button>
@@ -106,7 +133,6 @@ const Some = () => {
   // }
   // .btn{
   //     transition: 1s ease;
-  
   // }
   // .bg{
   //     padding: 40px 0;
@@ -128,6 +154,7 @@ const Some = () => {
   //     opacity: 1;
       
   // } */
+  
   
   )
 }
