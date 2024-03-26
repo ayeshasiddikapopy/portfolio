@@ -415,7 +415,106 @@
     transition: 1s;
 }
 
+/* ------------preloader---------- */
+.preloading{
+    opacity: 0.3;
+    animation: some 0.4s linear;
+}
+.preloader{
+    position: relative;
+    animation: preload 0.2s linear;
+    transition: 0.3s;
+}
+.preloader::after{
+    position: absolute;
+    content: '';
+    top: 10%;
+    left: -50%;
+    height: 100%;
+    width: 10px;
+    background: #000;
+    transform: rotate(30deg);
+    border-radius: 50px;
+    animation: pre_after 0.4s linear ;
+    transition: 0.3s;
+}
+.preloader::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -40%;
+    height: 10px;
+    width: 60%;
+    background: #000;
+    border-radius: 50px;
+    animation: pre_beffore 0.2s linear ;
+    transition: 0.4s;
 
+}
+@keyframes pre_after {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes pre_beffore {
+    0%{
+        left: -40%;
+        width: 0;
+        top: 20%;
+
+    }
+    100%{
+        /* left: -70%; */
+        width: 70%;
+        top: 50%;
+        transition: 1s;
+
+    }
+}
+@keyframes preload {
+    0%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.pre_item{
+    opacity: 1;
+    animation: pre_item 0.3s linear;
+}
+@keyframes pre_item {
+    0%{
+        opacity: 0;
+
+    }    
+    50%{
+    opacity: 0.5;
+        
+    }    
+    100%{
+    opacity: 1;
+        
+    }    
+}
+@keyframes some {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:0.5;
+    }
+}
 
 /* media query */
 @media (min-width: 640px) and (max-width: 1060px) {
@@ -445,7 +544,7 @@
     }
    
 }
-@media (min-width: 200px) and (max-width: 350px){
+@media (min-width: 0px) and (max-width: 400px){
    .about_btn{
     width: 80%;
    }
