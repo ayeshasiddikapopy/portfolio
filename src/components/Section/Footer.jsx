@@ -20,16 +20,16 @@ const Footer = () => {
     <>
       <div className='py-2 bg-black'>
         <Container>
-          <div className='mx-auto w-[100px] h-[50px] my-2 '>
+          <div className='mx-auto w-[6.25rem] h-[3.125rem] my-2 '>
             <Images src='https://i.postimg.cc/bv77zjyx/flogo.png'/>
           </div>
           <div className="footer__content flex gap-x-2 justify-center items-center py-3 border-t border-">
-              <Link><FaFacebookF className='text-white text-[20px] hover:text-blue-500 transition-[0.4s]' onClick={handlefacebooke}/></Link>
-              <Link><PiGithubLogoThin className='text-white text-[24px] hover:text-green-300 transition-[0.4s]' onClick={handlegit}/></Link>
-              <Link><FaLinkedin className='text-white text-[24px] hover:text-blue-300 transition-[0.4s]' onClick={handlelinked}/></Link>
+              <Link><FaFacebookF className='text-white text-[1.25rem] hover:text-blue-500 transition-[0.4s]' onClick={handlefacebooke}/></Link>
+              <Link><PiGithubLogoThin className='text-white text-[1.5rem] hover:text-green-300 transition-[0.4s]' onClick={handlegit}/></Link>
+              <Link><FaLinkedin className='text-white text-[1.5rem] hover:text-blue-300 transition-[0.4s]' onClick={handlelinked}/></Link>
           </div>
           <div className='flex justify-center'>
-            <p className='text-white text-[10px] inline-block '>all <PiCopyrightThin className='inline'/>copyrights reserved by ayeshasiddikapopy</p>
+            <p className='text-white text-[0.6rem] inline-block '>all <PiCopyrightThin className='inline'/>copyrights reserved by ayeshasiddikapopy</p>
           </div>
         </Container>
       </div>

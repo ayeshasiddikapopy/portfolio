@@ -148,8 +148,6 @@
     top: 100%;
     left: 80%;
 }
-
-
 .hero_items,.suheading_items{
     position: relative;
 }
@@ -161,7 +159,7 @@
     transform: translate(-50%,-50%);
     height: 1px;
     width: 20%;
-    background: #ffff;
+    background: #676767;
     animation: items;
     animation-duration: 0.4s;
 }
@@ -420,15 +418,29 @@
 
 
 /* media query */
+@media (min-width: 640px) and (max-width: 1060px) {
+    .team__after{
+        width: 100%;
+        
+    }
+    .team_before{
+        width: 80%;
+        text-align: center;
+        top: 90%;
+    }
+    
+}
 @media (min-width: 600px) and (max-width: 770px) {
     
     .team_heading{
         font-size: 4rem !important;
     }
-
 }
-
-
+@media (min-width: 200px) and (max-width: 400px){
+    .team_img{
+        width: 100%;
+    }
+}
 @media (min-width: 400px) and (max-width: 600px) {
     .hero_btn{
         width: 50% !important;

@@ -15,9 +15,9 @@ const Services = () => {
   return (
     <>
         <Container>
-           <SubHeading title='services' className='text-center py-4'/>
+           <SubHeading title='services' className='text-center py-[2rem] '/>
            <div className='text-center'>
-               <p className='inline text-black text-sm font-sans font-medium '>Providing best services for web designs</p>
+               <p className='inline text-black md:text-sm text-[0.75rem] font-sans font-medium '>Providing best services for web designs</p>
            </div>
             <Flex className='flex flex-wrap gap-[2rem] justify-center py-[2rem] '>
                 <ServiceCard title='html-css' description='creates static responsives designs'>

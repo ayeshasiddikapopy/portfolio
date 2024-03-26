@@ -7,17 +7,17 @@ import { TbWorld } from "react-icons/tb";
 const TeamCard = ({onfacebook, onLinkedin, onlink, teamimg,title,designation}) => {
   return (
     <>
-    <Images src={teamimg} className='w-[100%] h-[18.75rem] p-2.5 relative team__Img overflow-hidden '>
+    <Images src={teamimg} className='w-[100%] h-[18.75rem] p-2.5 relative team__Img overflow-hidden cursor-pointer'>
         <div className='overlay '>
-            <h2 className='text-secondary font-philospher font-semibold capitalize bg-[#000000ca] rounded sm:text-[1.2rem] absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10'>{title}</h2>
+            <h2 className='text-secondary font-philospher font-semibold capitalize bg-[#000000ca] rounded sm:text-[1.2rem] absolute top-[100%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 team_before'>{title}</h2>
         </div>
         <div className='overlay2'>
-            <div className='absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[80%] text-center'>
-                <p className='text-black text-[1rem] font-sans font-semibold py-3 px-2 capitalize bg-[#fff] rounded'>{designation}</p>
+            <div className='absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[80%] text-center team__after'>
+                <p className='text-black text-[1rem] font-sans font-semibold py-3 px-2 bg-[#fff] rounded'>{designation}</p>
                 <div className='flex justify-center py-2'>
-                    <FaFacebookF className='bg-white mx-2 text-[34px] p-2 rounded hover:bg-black  hover:font-bold transition-all hover:text-white cursor-pointer' onClick={onfacebook}/>
-                    <TbWorld className='bg-white mx-2 text-[34px] p-2 rounded hover:bg-black  hover:font-bold transition-all hover:text-white cursor-pointer' onClick={onLinkedin}/>
-                    <FaLinkedinIn className='bg-white mx-2 text-[34px] p-2 rounded hover:bg-black  hover:font-bold transition-all hover:text-white cursor-pointer' onClick={onlink}/>
+                    <FaFacebookF className='bg-white mx-2 text-[2.125rem] p-2 rounded hover:bg-black  hover:font-bold transition-all hover:text-white cursor-pointer' onClick={onfacebook}/>
+                    <TbWorld className='bg-white mx-2 text-[2.125rem] p-2 rounded hover:bg-black  hover:font-bold transition-all hover:text-white cursor-pointer' onClick={onLinkedin}/>
+                    <FaLinkedinIn className='bg-white mx-2 text-[2.125rem] p-2 rounded hover:bg-black  hover:font-bold transition-all hover:text-white cursor-pointer' onClick={onlink}/>
                 </div>
             </div>
         </div>

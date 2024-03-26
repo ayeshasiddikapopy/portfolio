@@ -20,7 +20,7 @@ const Skills = () => {
     <>
     <div className='p-2.5'>
         <Container>
-            <SubHeading title='Skills' className='text-center sm:py-12 pb-7 '/>
+            <SubHeading title='Skills' className='text-center sm:py-8 pb-7 '/>
             <div className='flex flex-wrap gap-x-5 justify-center gap-[2rem]'>
                 <Card title= 'html' item='Hypertext markup Language '>
                     <TiHtml5 className='text-[20px] text-[#FC6736] inline-block' />

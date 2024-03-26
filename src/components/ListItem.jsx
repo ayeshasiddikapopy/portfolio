@@ -5,7 +5,7 @@ const ListItem = ({title,onClick,className, to}) => {
   return (
     <>
         <li onClick={onClick} className={className}>
-          <Link className=' text-black text-base font-sans font-medium capitalize hover:text-[#c14061] hover:transition-all hover:font-bold' to={to} >
+          <Link className=' text-black md:text-base text-[0.875rem] font-sans font-medium capitalize hover:text-[#c14061] hover:transition-all hover:font-bold' to={to} >
 
             {title}
             

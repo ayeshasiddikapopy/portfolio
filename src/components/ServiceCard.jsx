@@ -8,7 +8,7 @@ const ServiceCard = ({description, title, children}) => {
             {children}
             
             <h2 className='text-black text-base font-philospher font-bold py-3'>{title}</h2>
-            <p className='text-[#676767] text-[12px] font-sans font-semibold '>{description} </p>
+            <p className='text-[#676767] text-[0.75rem] font-sans font-semibold '>{description} </p>
         </div>
     </>
   )
