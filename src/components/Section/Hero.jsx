@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <>
-    <div className="bg-[url('src/assets/hero2.jpg')] w-full h-full py-7 bg-center bg-no-repeat bg-cover hero__bg relative z-0" >
+    <div className="bg-[url('https://i.postimg.cc/wMMhp6H2/hero2.jpg')] w-full h-full py-7 bg-center bg-no-repeat bg-cover hero__bg relative z-0" >
       <div className='absolute w-full h-full top-0 left-0 bg-[#000000d2] z-[-1]'></div>
       <Container>
           <div className="hero md:py-[120px] text-center px-2.5">

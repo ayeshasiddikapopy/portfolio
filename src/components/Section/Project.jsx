@@ -90,17 +90,17 @@ const Project = ({ history }) => {
         <Container>
             <SubHeading title='Projects' className='text-center sm:py-3 py-3 '/>
             <div className={more ? "project__contents flex flex-wrap justify-center" : "project__contents flex flex-wrap justify-center delay_animi"}>
-                <ProjectCard src = '../src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
-                <ProjectCard src = '../src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
-                <ProjectCard src = '../src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>
-                <ProjectCard src = '../src/assets/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
+                <ProjectCard src = 'https://i.postimg.cc/mkx5G3S8/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
+                <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
+                <ProjectCard src = 'https://i.postimg.cc/s2qnpPbs/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>
+                <ProjectCard src = 'https://i.postimg.cc/4NsWbx27/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
             </div>
            
             <div className={more ? 'project__contentss sm:flex sm:flex-wrap project_show project_showAnim' : 'project__contentss sm:flex sm:flex-wrap project_closeAnim project_close'}>
-                <ProjectCard src = 'src/assets/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne}/>
-                <ProjectCard src = 'src/assets/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo}/>
-                <ProjectCard src = 'src/assets/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree}/>
-                <ProjectCard src = 'src/assets/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour}/>
+                <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectOne} onclickView={handleViewOne}/>
+                <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo}/>
+                <ProjectCard src = 'https://i.postimg.cc/s2qnpPbs/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree}/>
+                <ProjectCard src = 'https://i.postimg.cc/4NsWbx27/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour}/>
             </div>
             
              <div className='flex justify-center py-2 project__More my-2 cursor-pointer transition-all' onClick={handleMore}>

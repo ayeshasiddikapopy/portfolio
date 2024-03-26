@@ -61,12 +61,12 @@ const Team = () => {
                     <div className='sm:w-[50%] p-2'>
                         <div className='sm:flex w-[100%]'>
                             <div className='sm:w-[50%] w-full'>
-                                <TeamCard title= 'Tohaya Jannat' teamimg='../src/assets/toha.jpg' designation='frontend devloper' onfacebook={handlefb2} onLinkedin={handlelinked2} onlink={handleport2}/>
-                                <TeamCard title= 'hamza Altamas' teamimg='../src/assets/hamza.jpg' designation='Entrepreneur & Full Stack Developer at Byteliberty' onfacebook={handlefb} onLinkedin={handlelinked} onlink={handleport}/>
+                                <TeamCard title= 'Tohaya Jannat' teamimg='https://i.postimg.cc/BndDphZY/toha.jpg' designation='frontend devloper' onfacebook={handlefb2} onLinkedin={handlelinked2} onlink={handleport2}/>
+                                <TeamCard title= 'hamza Altamas' teamimg='https://i.postimg.cc/hvfPHBp9/hamza.jpg' designation='Entrepreneur & Full Stack Developer at Byteliberty' onfacebook={handlefb} onLinkedin={handlelinked} onlink={handleport}/>
                             </div>
                             <div className='sm:mt-7 sm:w-[50%] w-full'>
-                                <TeamCard title= 'monir khan' teamimg='../src/assets/monir.jpg' designation='web app developer' onfacebook={handlefb3} onLinkedin={handlelinked3} onlink={handleport3}/>
-                                <TeamCard title= 'Sajid Uddin Abir ' teamimg='../src/assets/sajid.jpg' designation='frontend developer' onfacebook={handlefb4} onLinkedin={handlelinked4} onlink={handleport4}/>
+                                <TeamCard title= 'monir khan' teamimg='https://i.postimg.cc/bvpYqbmY/monir.jpg ' designation='web app developer' onfacebook={handlefb3} onLinkedin={handlelinked3} onlink={handleport3}/>
+                                <TeamCard title= 'Sajid Uddin Abir ' teamimg='https://i.postimg.cc/mkvRJFcs/sajid.jpg' designation='frontend developer' onfacebook={handlefb4} onLinkedin={handlelinked4} onlink={handleport4}/>
                             </div>
                         </div>
                     </div>

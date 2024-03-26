@@ -30,7 +30,7 @@ const About = () => {
         <Container>
           <div className='sm:flex sm:items-center'>
             <div className='md:w-[50%] p-4'>
-              <Images src='src/assets/about.png'/>
+              <Images src='https://i.postimg.cc/44hDFy1W/about.png'/>
             </div>
             <div className='md:p-4 md:w-[50%] w-full mx-auto my-2 px-2.5'>
               <SubHeading title='About me' className='pt-[20px]'/>

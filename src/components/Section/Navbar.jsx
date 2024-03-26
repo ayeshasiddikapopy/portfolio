@@ -78,7 +78,7 @@ const Navbar = () => {
     <div className='py-2 bg-secondary '>
         <Container>
             <Flex className='flex justify-between items-center px-2.5'>
-                <Images className='w-[100px] h-[50px]' src='src/assets/logo.png'/>
+                <Images className='w-[100px] h-[50px]' src='https://i.postimg.cc/zGT4DcQK/logo.png'/>
                 {
                   bar &&
                   <FaBars className='w-[40px] h-[40px] bg- text-black rounded-md absolute top-[2%] right-[3%] p-2 ' onClick={handlbar}/>

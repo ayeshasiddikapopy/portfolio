@@ -21,7 +21,7 @@ const Footer = () => {
       <div className='py-2 bg-black'>
         <Container>
           <div className='mx-auto w-[100px] h-[50px] my-2 '>
-            <Images src='src/assets/flogo.png'/>
+            <Images src='https://i.postimg.cc/bv77zjyx/flogo.png'/>
           </div>
           <div className="footer__content flex gap-x-2 justify-center items-center py-3 border-t border-">
               <Link><FaFacebookF className='text-white text-[20px] hover:text-blue-500 transition-[0.4s]' onClick={handlefacebooke}/></Link>
