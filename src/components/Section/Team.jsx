@@ -8,43 +8,43 @@ const Team = () => {
    
     // linked facebook
     let handlefb = () => {
-        window.open('www.facebook.com/CoderHamza','_blank')
+        window.open('https://www.facebook.com/CoderHamza', '_blank')
     }
     let handlefb2 = () => {
-        window.open('www.facebook.com/toyahajannat07','_blank')
+        window.open('https://www.facebook.com/search/top?q=toyaha%20jannat','_blank')
     }
     let handlefb3 = () => {
-        window.open('','_blank')
+        window.open('https://www.facebook.com/profile.php?id=100036565272824','_blank')
     }
     let handlefb4 = () => {
-        window.open('','_blank')
+        window.open('https://www.facebook.com/Sajid.ID40','_blank')
     }
 
-    //linked linkedin
+    //----portfolio
     let handlelinked = () => {
-        window.open('https://www.linkedin.com/in/hamza-altamas/','_blank')
+        window.open('https://www.byteliberty.com/?fbclid=IwAR2pZC61UauOY3kdXVbPl1nu6gMYQkTP--8ZkhiZzXIlGc9ybZMr9J3Ortg', '_blank')
     }
     let handlelinked2 = () => {
-        window.open('','_blank')
+        window.open('https://www.facebook.com/search/top?q=toyaha%20jannat','_blank')
     }
     let handlelinked3 = () => {
         window.open('https://www.linkedin.com/in/monirhossain010?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','_blank')
     }
     let handlelinked4 = () => {
-        window.open('https://www.linkedin.com/in/sajiduabir/','_blank')
+        window.open('https://www.linkedin.com/in/sajiduabir/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bd%2BrCi5aYQDiF%2FnPRFM7Cdw%3D%3D','_blank')
     }
-    //liunked porfolio
+    //---- linkedin
     let handleport = () => {
-        window.open('','_blank')
+        window.open('https://www.linkedin.com/in/hamza-altamas-39541b1b4/','_blank')
     }
     let handleport2 = () => {
-        window.open('','_blank')
+        window.open('https://www.facebook.com/search/top?q=toyaha%20jannat','_blank')
     }
     let handleport3 = () => {
-        window.open('','_blank')
+        window.open('https://www.linkedin.com/in/monirhossain010/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','_blank')
     }
     let handleport4 = () => {
-        window.open('','_blank')
+        window.open('https://www.linkedin.com/in/sajiduabir/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bd%2BrCi5aYQDiF%2FnPRFM7Cdw%3D%3D','_blank')
     }
 
   return (
