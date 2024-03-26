@@ -109,7 +109,7 @@ const Navbar = () => {
                     <ListItem title='contact' className=' nav_resize_item' to='/contact' onClick={handleContact}/>
                   </List>
 
-                  <Images className='w-[100px] h-[50px] absolute bottom-[2%] left-[50%] translate-y-[2%] translate-x-[-50%]' src='src/assets/logo.png'/>
+                  <Images className='w-[100px] h-[50px] absolute bottom-[2%] left-[50%] translate-y-[2%] translate-x-[-50%]' src='https://i.postimg.cc/zGT4DcQK/logo.png'/>
                 </div>
                 {/* resize menu ended */}
             </Flex>

@@ -382,7 +382,7 @@
 .overlay{
     position: absolute;
     content: '';
-    top: -50%;
+    top: -60%;
     left: 0;
     width: 100%;
     height: 0;
@@ -394,7 +394,7 @@
 .overlay2{
     position: absolute;
     content: '';
-    bottom: -50%;
+    bottom: -60%;
     /* bottom: 0; */
     left: 0;
     width: 100%;
@@ -440,10 +440,23 @@
     .team_img{
         width: 100%;
     }
+    .modal{
+        width: 80%;
+    }
+   
+}
+@media (min-width: 200px) and (max-width: 350px){
+   .about_btn{
+    width: 80%;
+   }
+   
 }
 @media (min-width: 400px) and (max-width: 600px) {
     .hero_btn{
         width: 50% !important;
+    }
+    .modal{
+        width: 80%;
     }
 }
 @media (min-width: 100px) and (max-width: 400px) {

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Container from '../Container'
 import SubHeading from '../SubHeading'
-import ProjectCard from '../ProjectCard';
+// import ProjectCard from '../ProjectCard';
 import ModalProject from '../ModalProject';
+import ProjectCard from './../ProjectCard';
 
 
 const Project = ({ history }) => {
@@ -96,7 +97,7 @@ const Project = ({ history }) => {
                 <ProjectCard src = 'https://i.postimg.cc/4NsWbx27/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
             </div>
            
-            <div className={more ? 'project__contentss flex flex-wrap justify-centerp project_show project_showAnim' : 'project__contentss flex flex-wrap justify-center project_closeAnim project_close'}>
+            <div className={more ? 'project__contentss flex flex-wrap justify-center project_show project_showAnim' : 'project__contentss flex flex-wrap justify-center project_closeAnim project_close'}>
                 <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectOne} onclickView={handleViewOne}/>
                 <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo}/>
                 <ProjectCard src = 'https://i.postimg.cc/s2qnpPbs/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree}/>
