@@ -6,12 +6,17 @@ import List from '../List';
 import ListItem from '../ListItem';
 import { FaBars } from "react-icons/fa6";
 import { IoIosClose } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
+  let navigate = useNavigate()
   let [show, setshow] = useState(true)
   let [menuShow, setMenushow] = useState(false)
   let [bar, setbar] = useState(false)
+  let bRef = useRef(null)
+  let overRef = useRef(null)
+
 
   useEffect(()=>{
     let resizewindow = () => {
@@ -32,8 +37,7 @@ const Navbar = () => {
 
   },[])
 
-  let bRef = useRef(null)
-  let overRef = useRef(null)
+
 
   let handlbar = () =>{
     bRef.current.classList.toggle('nav_show');
@@ -53,6 +57,21 @@ const Navbar = () => {
     overRef.current.classList.remove('overlayNav-active');
     overRef.current.classList.remove('overlayNav');
   }
+  let handlehome = () => {
+    navigate('/')
+  }
+  let handleAbout = () => {
+    navigate('/about')
+  }
+
+  let handlService = () => {
+    navigate('/services')
+  }
+
+  let handleContact = () => {
+    navigate('/contact')
+  }
+
 
   return (
     <>
@@ -68,10 +87,10 @@ const Navbar = () => {
                 show &&
                 <div className="menu">
                   <List className=  'sm:flex gap-2'>
-                    <ListItem title='home' className='py-2 px-4 nav_item' to='/'/>
-                    <ListItem title='About' className='py-2 px-4 nav_item'/>
-                    <ListItem title='services' className='py-2 px-4 nav_item'/>
-                    <ListItem title='contact' className='py-2 px-4 nav_item'/>
+                    <ListItem title='home' className='py-2 px-4 nav_item' to='/' onClick={handlehome}/>
+                    <ListItem title='About' className='py-2 px-4 nav_item' to='/about' onClick={handleAbout}/>
+                    <ListItem title='services' className='py-2 px-4 nav_item' to='/services' onClick={handlService}/>
+                    <ListItem title='contact' className='py-2 px-4 nav_item' to='/contact' onClick={handleContact}/>
                   </List>
                 </div>
                 }
@@ -84,10 +103,10 @@ const Navbar = () => {
                     <IoIosClose className= {' nav_show text-[40px] bg-secondary rounded-md ' } onClick={handllclose}/>
                   </div>
                   <List className= 'flex gap-[4rem] flex-col items-center content-center w-[100%] bg-[#fff] h-[100%]'>
-                    <ListItem title='home' className=' nav_resize_item '/>
-                    <ListItem title='About' className='nav_resize_item'/>
-                    <ListItem title='services' className=' nav_resize_item'/>
-                    <ListItem title='contact' className=' nav_resize_item'/>
+                    <ListItem title='home' className=' nav_resize_item ' to='/' onClick={handlehome}/>
+                    <ListItem title='About' className='nav_resize_item' to='/about' onClick={handleAbout}/>
+                    <ListItem title='services' className=' nav_resize_item' to='/services' onClick={handlService}/>
+                    <ListItem title='contact' className=' nav_resize_item' to='/contact' onClick={handleContact}/>
                   </List>
 
                   <Images className='w-[100px] h-[50px] absolute bottom-[2%] left-[50%] translate-y-[2%] translate-x-[-50%]' src='src/assets/logo.png'/>

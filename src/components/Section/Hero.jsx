@@ -12,6 +12,9 @@ const Hero = () => {
     console.log('dddd')
     navigate('cv')
   }
+  let handleLearn = () => {
+    navigate('project')
+  }
 
   return (
     <>
@@ -29,7 +32,7 @@ const Hero = () => {
                       <Button title='download cv' onClick={handleDownload} />
                       <AiOutlineDownload className='text-white text-[18px]'/>
                   </div>
-                  <div className='border border-white border-r-4 rounded-md text-white text-base font-semibold font-sans hero_btn flex items-center justify-center lg:w-[20%] sm:w-[30%] w-[30%]'>
+                  <div className='border border-white border-r-4 rounded-md text-white text-base font-semibold font-sans hero_btn flex items-center justify-center lg:w-[20%] sm:w-[30%] w-[30%]' onClick={handleLearn}>
                     <Button title='Learn More'/>
                     <GoLinkExternal className='text-[18px] text-white'/>
                   </div>

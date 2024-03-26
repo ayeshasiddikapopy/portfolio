@@ -12,7 +12,7 @@ const About = () => {
   let learnRef = useRef()
 
   let handleLearn = () => {
-    navigate('cv')
+    navigate('/services')
     console.log('fff')
     
   }
