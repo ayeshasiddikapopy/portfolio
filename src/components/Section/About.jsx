@@ -34,7 +34,7 @@ const About = () => {
             </div>
             <div className='md:p-4 md:w-[50%] w-full mx-auto my-2 px-2.5 cursor-pointer'>
               <SubHeading title='About me' className='pt-[]'/>
-              <p className='text-sm font-medium font-sans text-black py-7 text-justify'>Enthusiasm to creating and designing the user interface (UI) and user experience (UX) of websites and web applications. ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient also responsive designing. works with various frontend technologies HTML,CSS, Javascript, use libraries such as React js, and modern css styling. Eager to learn more to grow frontend based carreer. Graduated in CSE from Gono Bishawbidyalay.</p>
+              <p className='text-sm font-medium font-sans text-black py-7 text-justify'>Enthusiasm to creating and designing the user interface (UI) and user experience (UX) of websites and web applications. ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient also responsive designing. works with various frontend technologies HTML, CSS, Javascript, use libraries such as React js, and modern css styling. Eager to learn more to grow frontend based carreer. Graduated in CSE from Gono Bishawbidyalay.</p>
               <div className='bg-black text-white w-[50%] rounded text-center flex items-center justify-center cursor-pointer about_btn' onClick={handleLearn} ref={learnRef} onMouseOver={handleMove} onMouseLeave={handleleave}>
                 <Button title='learn more' />
                 <CgCornerDoubleRightUp className='text-white text-[1.1rem]'/>

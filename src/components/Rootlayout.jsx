@@ -16,12 +16,16 @@ const Rootlayout = () => {
   return (
     <>
       {
-        preload &&
+        preload ?
         <Preloader/>
-      }
-        <Navbar/>
+        :
+        <>
+         <Navbar/>
         <Outlet/>
         <Footer/>
+        </>
+      }
+       
     </>
   )
 }
