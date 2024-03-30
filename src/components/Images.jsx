@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Images = ({className,src,children}) => {
+const Images = ({className,src,children , onClick}) => {
   return (
     <>
-    <div className={className}>
+    <div className={className} onClick={onClick}>
         {children}
-        <img src={src} alt="photo" className='w-full h-full rounded'/>
+        <img src={src} alt="photo" className='w-full h-full rounded cursor-pointer'/>
     </div>
     </>
   )

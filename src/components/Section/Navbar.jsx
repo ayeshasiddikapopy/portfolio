@@ -52,7 +52,7 @@ const Navbar = () => {
 
     // setMenushow(!menuShow)
   }
-  let handleOvarlay =() => {
+  let handleOvarlay = () => {
     bRef.current.classList.remove('nav_show');
     overRef.current.classList.remove('overlayNav-active');
     overRef.current.classList.remove('overlayNav');
@@ -71,6 +71,9 @@ const Navbar = () => {
   let handleContact = () => {
     navigate('/contact')
   }
+  let handleLogo = () => {
+    navigate('/')
+  }
 
 
   return (
@@ -78,7 +81,7 @@ const Navbar = () => {
     <div className='py-2 bg-secondary '>
         <Container>
             <Flex className='flex justify-between items-center px-2.5'>
-                <Images className='w-[100px] h-[50px]' src='https://i.postimg.cc/zGT4DcQK/logo.png'/>
+                <Images className='w-[100px] h-[50px]' src='https://i.postimg.cc/zGT4DcQK/logo.png' onClick={handleLogo}/>
                 {
                   bar &&
                   <FaBars className='w-[40px] h-[40px] bg- text-black rounded-md absolute top-[2%] right-[3%] p-2 ' onClick={handlbar}/>
@@ -109,7 +112,7 @@ const Navbar = () => {
                     <ListItem title='contact' className=' nav_resize_item' to='/contact' onClick={handleContact}/>
                   </List>
 
-                  <Images className='w-[100px] h-[50px] absolute bottom-[2%] left-[50%] translate-y-[2%] translate-x-[-50%]' src='https://i.postimg.cc/zGT4DcQK/logo.png'/>
+                  <Images className='w-[100px] h-[50px] absolute bottom-[2%] left-[50%] translate-y-[2%] translate-x-[-50%]' src='https://i.postimg.cc/zGT4DcQK/logo.png' onClick={handleLogo}/>
                 </div>
                 {/* resize menu ended */}
             </Flex>

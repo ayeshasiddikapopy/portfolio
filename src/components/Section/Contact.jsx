@@ -5,7 +5,7 @@ import SubHeading from '../SubHeading'
 const Contact = () => {
   return (
     <>
-        <div className='py-3 px-2.5'>
+        <div className='py-3 px-2.5 bg-[#fff]'>
             <Container>
                 <div>
                     <SubHeading title= 'contact' className='text-center py-8'/>

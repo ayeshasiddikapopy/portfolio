@@ -7,12 +7,14 @@ import Preloader from './Preloader'
 
 const Rootlayout = () => {
   let [preload, setpreload] = useState(false)
+
   useEffect(()=>{
     setpreload(true)
     setTimeout(()=>{
       setpreload(false)
     },500)
   },[])
+  
   return (
     <>
       {
@@ -20,9 +22,9 @@ const Rootlayout = () => {
         <Preloader/>
         :
         <>
-         <Navbar/>
-        <Outlet/>
-        <Footer/>
+          <Navbar/>
+          <Outlet/>
+          <Footer/>
         </>
       }
        

@@ -13,7 +13,7 @@ import { PiArrowsClockwiseThin } from "react-icons/pi";
 
 const Services = () => {
   return (
-    <>
+    <div className='bg-[#fff]'>
         <Container>
            <SubHeading title='services' className='text-center py-[2rem] '/>
            <div className='text-center'>
@@ -43,7 +43,7 @@ const Services = () => {
                 </ServiceCard>
             </Flex>
         </Container>
-    </>
+    </div>
   )
 }
 
