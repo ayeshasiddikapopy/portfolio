@@ -5,6 +5,9 @@
 
 /*----------- only for animation ----------- */
 /* navbar section */
+body{
+    overflow-x: hidden !important;
+}
 .nav_item{
     position: relative;
    

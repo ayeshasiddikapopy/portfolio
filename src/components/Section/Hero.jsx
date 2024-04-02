@@ -30,11 +30,11 @@ const Hero = () => {
                 
                   <div className='border border-black border-r-4 rounded-md text-black text-base font-semibold font-sans hero_btn flex items-center justify-center lg:w-[20%] sm:w-[30%] w-[30%] hover:text-[#c14061] '>
                       <Button title='download cv' onClick={handleDownload} />
-                      <AiOutlineDownload className='text-black text-[1.125rem]'/>
+                      <AiOutlineDownload className='text-black text-[1.125rem] pr-1'/>
                   </div>
                   <div className='border border-black border-r-4 rounded-md text-black text-base font-semibold font-sans hero_btn flex items-center justify-center lg:w-[20%] sm:w-[30%] w-[30%] hover:text-[#c14061]' onClick={handleLearn}>
                     <Button title='Learn More'/>
-                    <GoLinkExternal className='text-1.125rem] text-black'/>
+                    <GoLinkExternal className='text-1.125rem] text-black pr-1'/>
                   </div>
               </div>
           </div>
