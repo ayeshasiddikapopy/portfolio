@@ -24,7 +24,7 @@ const Project = ({ history }) => {
         window.open('https://github.com/ayeshasiddikapopy/namber-guess.git', '_blank');
     }
     let handleprojectFour = () => {
-        window.open('https://github.com/ayeshasiddikapopy/add-me.git', '_blank');
+        window.open('https://github.com/ayeshasiddikapopy/priority.git', '_blank');
     }
 
     // view site
@@ -38,7 +38,7 @@ const Project = ({ history }) => {
         window.open('https://jsgamees.netlify.app', '_blank');
     }
     let handleviewFour = () => {
-        window.open('https://zingy-conkies-305180.netlify.app', '_blank');
+        window.open('https://priority-ayeshasiddikapopys-projects.vercel.app/', '_blank');
     }
 
     // see more
@@ -94,7 +94,7 @@ const Project = ({ history }) => {
                 <ProjectCard src = 'https://i.postimg.cc/mkx5G3S8/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
                 <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
                 <ProjectCard src = 'https://i.postimg.cc/s2qnpPbs/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>
-                <ProjectCard src = 'https://i.postimg.cc/4NsWbx27/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
+                <ProjectCard src = 'https://i.postimg.cc/MG90QpRn/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
             </div>
            
             <div className={more ? 'project__contentss flex flex-wrap justify-center project_show project_showAnim' : 'project__contentss flex flex-wrap justify-center project_closeAnim project_close'}>
