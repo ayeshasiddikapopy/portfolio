@@ -60,11 +60,11 @@ const Team = () => {
                     </div>
                     <div className='sm:w-[50%] p-2'>
                         <div className='flex w-[100%] flex-col sm:flex-row items-center'>
-                            <div className='sm:w-[50%] w-[60%] team_img'>
+                            <div className='sm:w-[50%] w-[60%] team_img p-2.5'>
                                 <TeamCard title= 'Tohaya Jannat' teamimg='https://i.postimg.cc/BndDphZY/toha.jpg' designation='Frontend Devloper' onfacebook={handlefb2} onLinkedin={handlelinked2} onlink={handleport2}/>
-                                <TeamCard title= 'Hamza Altamas' teamimg='https://i.postimg.cc/hvfPHBp9/hamza.jpg' designation='Entrepreneur & Full stack developer at Byteliberty' onfacebook={handlefb} onLinkedin={handlelinked} onlink={handleport}/>
+                                <TeamCard title= 'Hamza Altamas' teamimg='https://i.postimg.cc/0yTw2Vct/hamza2.jpg' designation='Entrepreneur & Full stack developer at Byteliberty' onfacebook={handlefb} onLinkedin={handlelinked} onlink={handleport}/>
                             </div>
-                            <div className='sm:mt-7 sm:w-[50%] w-[60%] team_img'>
+                            <div className='sm:mt-7 sm:w-[50%] w-[60%] team_img p-2.5'>
                                 <TeamCard title= 'Monir Khan' teamimg='https://i.postimg.cc/bvpYqbmY/monir.jpg ' designation='Web app developer' onfacebook={handlefb3} onLinkedin={handlelinked3} onlink={handleport3}/>
                                 <TeamCard title= 'Sajid Uddin Abir ' teamimg='https://i.postimg.cc/mkvRJFcs/sajid.jpg' designation='Frontend Developer' onfacebook={handlefb4} onLinkedin={handlelinked4} onlink={handleport4}/>
                             </div>
