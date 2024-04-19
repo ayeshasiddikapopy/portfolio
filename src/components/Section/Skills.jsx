@@ -31,12 +31,12 @@ const Skills = () => {
                 <Card title= 'js' item='works with Raw js, modern es6 features'>
                     <DiJavascript1 className='text-[20px] text-[#FFC54D] inline-block' />
                 </Card>
-                <Card title= 'react' item='raw react js, hooks, states, rendering, props passing, conditional renderning'>
+                {/* <Card title= 'react' item='raw react js, hooks, states, rendering, props passing, conditional renderning'>
                     <FaReact className='text-[20px] text-[#50C4ED] inline-block' />
-                </Card>
-                <Card title= 'Next js' item='basic (frontend)'>
+                </Card> */}
+                {/* <Card title= 'Next js' item='basic (frontend)'>
                     <TbBrandNextjs className='text-[20px] text-black inline-block' />
-                </Card>
+                </Card> */}
                 <Card title= 'tailwind' item='modern css framework , works with various css, flex, grid , customize css using tailwind '>
                     <BiLogoTailwindCss className='text-[20px] text-[#50C4ED] inline-block' />
                 </Card>
@@ -49,12 +49,12 @@ const Skills = () => {
                 <Card title= 'Materialize' item='use different components as card, navbar, modal etc'>
                     <SiMui className='text-[20px] text-[#50C4ED] inline-block' />  
                 </Card>
-                <Card title= 'Ant design' item='react ui libraray, uses different components'>
+                {/* <Card title= 'Ant design' item='react ui libraray, uses different components'>
                     <AiOutlineAntDesign className='text-[20px] text-[#50C4ED] inline-block' />
                 </Card>
                 <Card title= 'Shadcn' item='ui design for react js different components as card, navbar, modal etc'>
                     <BiLogoTailwindCss className='text-[20px] text-[#50C4ED] inline-block' />  
-                </Card>
+                </Card> */}
                 <Card title= 'firebase' item='realtime, storage, authentications'>
                     <TbBrandFirebase className='text-[20px] text-[#50C4ED] inline-block' />
                 </Card> 

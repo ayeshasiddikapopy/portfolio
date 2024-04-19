@@ -26,9 +26,9 @@ const Services = () => {
                 <ServiceCard title='converts - figma Xd  psd pdf ' description='Converts any design or layout with pixel perfect , responsives'>
                     <FaFigma className='sm:text-[20px] text-[18px] inline bg-secondary text-black w-[50px] h-[50px] rounded-[50%] p-2.5'/>
                 </ServiceCard>
-                <ServiceCard title='html-react' description='converts into re-useable functional components, connects with api , data fetching or more '>
+                {/* <ServiceCard title='html-react' description='converts into re-useable functional components, connects with api , data fetching or more '>
                     <FaReact className='sm:text-[20px] text-[18px] inline bg-secondary text-black w-[50px] h-[50px] rounded-[50%] p-2.5'/>
-                </ServiceCard>
+                </ServiceCard> */}
                 <ServiceCard title='html-JavaScript' description='works with raw javasrcipt to better user experiences'>
                     <DiJavascript1 className='sm:text-[20px] text-[18px] inline bg-secondary text-black w-[50px] h-[50px] rounded-[50%] p-2.5'/>
                 </ServiceCard>
