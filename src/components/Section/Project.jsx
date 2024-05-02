@@ -15,13 +15,13 @@ const Project = ({ history }) => {
 
    // view code
     let handleprojectOne = () => {
-        window.open('https://github.com/ayeshasiddikapopy/chat-Me', '_blank');
+        window.open('https://github.com/ayeshasiddikapopy/plants.git', '_blank');
     }
     let handleprojectTwo = () => {
-        window.open('https://github.com/ayeshasiddikapopy/add-me.git', '_blank');
+        window.open('https://github.com/ayeshasiddikapopy/chat-Me.git', '_blank');
     }
     let handleprojectThree = () => {
-        window.open('https://github.com/ayeshasiddikapopy/namber-guess.git', '_blank');
+        window.open('https://github.com/ayeshasiddikapopy/add-me.git', '_blank');
     }
     let handleprojectFour = () => {
         window.open('https://github.com/ayeshasiddikapopy/priority.git', '_blank');
@@ -29,13 +29,13 @@ const Project = ({ history }) => {
 
     // view site
     let handleViewtwo = () => {
-        window.open('https://zingy-conkies-305180.netlify.app', '_blank');
+        window.open('https://chat-meown.netlify.app/', '_blank');
     }
     let handleViewOne = () => {
-        window.open('https://chat-meown.netlify.app', '_blank');
+        window.open('https://plantfuture.netlify.app/', '_blank');
     }
     let handleViewthree = () => {
-        window.open('https://jsgamees.netlify.app', '_blank');
+        window.open('https://notes-web23.netlify.app/', '_blank');
     }
     let handleviewFour = () => {
         window.open('https://priority-ayeshasiddikapopys-projects.vercel.app/', '_blank');
@@ -91,9 +91,9 @@ const Project = ({ history }) => {
         <Container>
             <SubHeading title='Projects' className='text-center sm:py-3 py-3 '/>
             <div className={more ? "project__contents flex flex-wrap justify-center" : "project__contents flex flex-wrap justify-center delay_animi"}>
-                <ProjectCard src = 'https://i.postimg.cc/mkx5G3S8/p1.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
+                <ProjectCard src = 'https://i.postimg.cc/FzVB9h3L/Screenshot-2024-04-30-205135.png' onclickcode={handleprojectOne} onclickView={handleViewOne} onClickDetails={handleDetails}/>
                 <ProjectCard src = 'https://i.postimg.cc/BQ0VYgbv/p2.png' onclickcode={handleprojectTwo} onclickView={handleViewtwo} onClickDetails={handleproject2}/>
-                <ProjectCard src = 'https://i.postimg.cc/s2qnpPbs/p3.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>
+                <ProjectCard src = 'https://i.postimg.cc/cH0nYWPh/Screenshot-2024-04-30-210748.png' onclickcode={handleprojectThree} onclickView={handleViewthree} onClickDetails={handleproject3}/>
                 <ProjectCard src = 'https://i.postimg.cc/MG90QpRn/p4.png' onclickcode={handleprojectFour} onclickView={handleviewFour} onClickDetails={handleproject4}/>
             </div>
            
@@ -117,7 +117,7 @@ const Project = ({ history }) => {
     </div>
     {
         details &&
-        <ModalProject title='add notes' oncloseAll={handleCloseALl} onclose={handleClose} description='Developed a notes web application allowing users to create, edit, delete, and update notes. Built with user-friendly interfaces using React and styled with Tailwind CSS, enabling seamless note management and organization. Utilized Firebase for real-time data storage and synchronization, ensuring a reliable and responsive user experience.' technologi='React, Tailwind CSS, Firebase'/>
+        <ModalProject title='plant selling' oncloseAll={handleCloseALl} onclose={handleClose} description='e-commerce website add to cart design , product pages, contacts and more ' technologi='html , css, vanilla js, gsap'/>
     }
 
     {
@@ -126,8 +126,7 @@ const Project = ({ history }) => {
     }
      {
         project3 &&
-        <ModalProject title='fun games' oncloseAll={handleCloseALl3} onclose={handleClose3} description='Created an interactive game interface using HTML and styled it with CSS for an engaging user experience.
-        Implemented game logic in JavaScript, allowing players to input their guesses and determining the winner based on matching criteria.Enhanced user engagement through dynamic feedback and intuitive gameplay mechanics.' technologi=' HTML, CSS, JavaScript'/>
+        <ModalProject title='notes' oncloseAll={handleCloseALl3} onclose={handleClose3} description='Created an note app using react js, .' technologi=': react , css'/>
     }
     {
         project4 &&
