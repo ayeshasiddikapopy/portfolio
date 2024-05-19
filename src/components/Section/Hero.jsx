@@ -10,7 +10,7 @@ const Hero = () => {
 
   let handleDownload = () => {
     console.log('dddd')
-    window.open('https://drive.google.com/file/d/1ecmwCNPeeDloeUV61s5dP1UPB9Gncig-/view?usp=drive_link','_blank')
+    window.open('https://drive.google.com/file/d/1_aFxK1cAxSvqXLbqawARVXAb_vcILcic/view?usp=sharing','_blank')
   }
   let handleLearn = () => {
     navigate('project')
